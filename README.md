@@ -4,20 +4,19 @@ Laralist is a classified web application written in Laravale Framework.
 
 ## Features
 * Front-end/Back-end Ad(Item) Post
-* Back-end Ad Mangement
-* n-Level Cateories
-* Mail Templtaes
-* Backend User Managment
-* Admin Controled Settings
+* Back-end Ad Management
+* n-Level Categories
+* Mail Templataes
+* Back-end User Management
+* Admin Controlled Settings
 * Search Ads
 
 ## Installation
 Run the folowing commands from the Terminal:
 ```
 composer install
-composert dump-autoload
+composer dump-autoload
 ```
-
 
 Next, add the prviders below to the providers array of config/app.php
 ```
@@ -27,14 +26,14 @@ Next, add the prviders below to the providers array of config/app.php
  	Laravel\Socialite\SocialiteServiceProvider::class,
  	Creativeorange\Gravatar\GravatarServiceProvider::class,
  	Proengsoft\JsValidation\JsValidationServiceProvider::class, 
-  App\Providers\ViewComposerServiceProvider::class,
+    App\Providers\ViewComposerServiceProvider::class,
  	Laralist\Listmeta\LaralistMetaServiceProvider::class, 
  	Laralist\Listconfig\ListConfigServiceProvider::class,
  	Laralist\Listcurl\ListCurlServiceProvider::class,
 
  ],  
 ```
-Add following class aliases to the aliases array of config/app.php
+Then, add following class aliases to the aliases array of config/app.php
 ```
 'aliases' => [
     // ...
@@ -48,9 +47,9 @@ Add following class aliases to the aliases array of config/app.php
 ```
 Set your database configuration in .env file
 
-Finally, run the following commands from the from the Terminal
+Finally, run the following commands from the Terminal
 ```
-php artisan maek:auth
+php artisan make:auth
 php artisan db:seed
 ```
 
