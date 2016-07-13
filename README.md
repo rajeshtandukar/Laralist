@@ -16,6 +16,7 @@ Run the folowing commands from the Terminal:
 ```
 composer install
 composert dump-autoload
+php artisan db:seed
 ```
 
 Next, add the prviders below to the providers array of config/app.php
@@ -26,6 +27,7 @@ Next, add the prviders below to the providers array of config/app.php
  	Laravel\Socialite\SocialiteServiceProvider::class,
  	Creativeorange\Gravatar\GravatarServiceProvider::class,
  	Proengsoft\JsValidation\JsValidationServiceProvider::class, 
+  App\Providers\ViewComposerServiceProvider::class,
  	Laralist\Listmeta\LaralistMetaServiceProvider::class, 
  	Laralist\Listconfig\ListConfigServiceProvider::class,
  	Laralist\Listcurl\ListCurlServiceProvider::class,
@@ -44,6 +46,7 @@ Finally, add following class aliases to the aliases array of config/app.php
     // ...
   ],
 ```
+
 
 # Back-end ScreenSort
   ![Image of Admin Dashboard]
