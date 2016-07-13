@@ -9,6 +9,7 @@ Laralist is a classified web application written in Laravale Framework.
 * Mail Templtaes
 * Backend User Managment
 * Admin Controled Settings
+* Ad Serch
 
 ## Installation
 Run the folowing commands from the Terminal:
@@ -42,3 +43,41 @@ Finally, add following class aliases to the aliases array of config/app.php
       'Meta'      => Laralist\Listmeta\Facade::class, 
     // ...
   ],
+
+# Back-end ScreenSort
+  ![Image of Admin Dashboard]
+  (https://github.com/rajeshtandukar/Laralist/images/admin-dashborad.png)
+
+  ![Image of Admin Item List]
+  (https://github.com/rajeshtandukar/Laralist/images/itemlist.png)
+
+  ![Image of Admin Categories]
+  (https://github.com/rajeshtandukar/Laralist/images/categories.png)
+
+  ![Image of Admin Countires]
+  (https://github.com/rajeshtandukar/Laralist/images/countires.png)
+
+  ![Image of Admin Mail Templates]
+  (https://github.com/rajeshtandukar/Laralist/images/mailtemplates.png)
+
+  ![Image of Admin Settings]
+  (https://github.com/rajeshtandukar/Laralist/images/settings.png)
+
+# Front-end ScreenSort
+  ![Image of Homepage]
+  (https://github.com/rajeshtandukar/Laralist/images/homepage.png)
+
+  ![Image of Ad]
+  (https://github.com/rajeshtandukar/Laralist/images/ad.png)
+
+  ![Image of Ad List]
+  (https://github.com/rajeshtandukar/Laralist/images/Items.png)
+
+  ![Image of My Ads]
+  (https://github.com/rajeshtandukar/Laralist/images/myitems.png)
+
+  ![Image of Ad Post]
+  (https://github.com/rajeshtandukar/Laralist/images/post.png)
+
+  ![Image of Ad Seach]
+  (https://github.com/rajeshtandukar/Laralist/images/seach.png)
