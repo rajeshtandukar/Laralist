@@ -43,6 +43,7 @@ Finally, add following class aliases to the aliases array of config/app.php
       'Meta'      => Laralist\Listmeta\Facade::class, 
     // ...
   ],
+```
 
 # Back-end ScreenSort
   ![Image of Admin Dashboard]
