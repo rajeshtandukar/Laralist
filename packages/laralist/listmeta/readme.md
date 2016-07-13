@@ -1,0 +1,1 @@
+# Meta tag generator  for Laravel 5.0, 5.1 and 5.2

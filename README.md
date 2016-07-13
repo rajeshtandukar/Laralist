@@ -16,8 +16,8 @@ Run the folowing commands from the Terminal:
 ```
 composer install
 composert dump-autoload
-php artisan db:seed
 ```
+
 
 Next, add the prviders below to the providers array of config/app.php
 ```
@@ -34,7 +34,7 @@ Next, add the prviders below to the providers array of config/app.php
 
  ],  
 ```
-Finally, add following class aliases to the aliases array of config/app.php
+Add following class aliases to the aliases array of config/app.php
 ```
 'aliases' => [
     // ...
@@ -46,7 +46,13 @@ Finally, add following class aliases to the aliases array of config/app.php
     // ...
   ],
 ```
+Set your database configuration in .env file
 
+Finally, run the following commands from the from the Terminal
+```
+php artisan maek:auth
+php artisan db:seed
+```
 
 # Back-end ScreenSort
   ![Image of Admin Dashboard]

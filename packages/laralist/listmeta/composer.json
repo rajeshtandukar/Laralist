@@ -1,0 +1,13 @@
+{
+    "name": "laravelist/listmeta",
+    "description": "Meta tag for laralist",   
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rajesh",
+            "email": "rtandukar@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}     
+}
