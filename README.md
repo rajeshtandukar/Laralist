@@ -1,5 +1,5 @@
 # LaraList
-======================================================================
+
 Laralist is a classified web application written in Laravale Framework.
 
 ## Features
@@ -21,13 +21,14 @@ Next, add the prviders below to the providers array of config/app.php
 ```
 'providers' => [
 // .....
-Collective\Html\HtmlServiceProvider::class,
-Laravel\Socialite\SocialiteServiceProvider::class,
-Creativeorange\Gravatar\GravatarServiceProvider::class,
-Proengsoft\JsValidation\JsValidationServiceProvider::class, 
-Laralist\Listmeta\LaralistMetaServiceProvider::class, 
-Laralist\Listconfig\ListConfigServiceProvider::class,
-Laralist\Listcurl\ListCurlServiceProvider::class,
+ 	Collective\Html\HtmlServiceProvider::class,
+ 	Laravel\Socialite\SocialiteServiceProvider::class,
+ 	Creativeorange\Gravatar\GravatarServiceProvider::class,
+ 	Proengsoft\JsValidation\JsValidationServiceProvider::class, 
+ 	Laralist\Listmeta\LaralistMetaServiceProvider::class, 
+ 	Laralist\Listconfig\ListConfigServiceProvider::class,
+ 	Laralist\Listcurl\ListCurlServiceProvider::class,
+ 	
  ],  
 ```
 Finally, add following class aliases to the aliases array of config/app.php:
