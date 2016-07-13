@@ -47,38 +47,38 @@ Finally, add following class aliases to the aliases array of config/app.php
 
 # Back-end ScreenSort
   ![Image of Admin Dashboard]
-  (https://github.com/rajeshtandukar/Laralist/images/admin-dashborad.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/admin-dashborad.png)
 
   ![Image of Admin Item List]
-  (https://github.com/rajeshtandukar/Laralist/images/itemlist.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/itemlist.png)
 
   ![Image of Admin Categories]
-  (https://github.com/rajeshtandukar/Laralist/images/categories.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/categories.png)
 
   ![Image of Admin Countires]
-  (https://github.com/rajeshtandukar/Laralist/images/countires.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/countires.png)
 
   ![Image of Admin Mail Templates]
-  (https://github.com/rajeshtandukar/Laralist/images/mailtemplates.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/mailtemplates.png)
 
   ![Image of Admin Settings]
-  (https://github.com/rajeshtandukar/Laralist/images/settings.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/settings.png)
 
 # Front-end ScreenSort
   ![Image of Homepage]
-  (https://github.com/rajeshtandukar/Laralist/images/homepage.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/homepage.png)
 
   ![Image of Ad]
-  (https://github.com/rajeshtandukar/Laralist/images/ad.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/ad.png)
 
   ![Image of Ad List]
-  (https://github.com/rajeshtandukar/Laralist/images/Items.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/Items.png)
 
   ![Image of My Ads]
-  (https://github.com/rajeshtandukar/Laralist/images/myitems.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/myitems.png)
 
   ![Image of Ad Post]
-  (https://github.com/rajeshtandukar/Laralist/images/post.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/post.png)
 
   ![Image of Ad Seach]
-  (https://github.com/rajeshtandukar/Laralist/images/seach.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/seach.png)
