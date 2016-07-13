@@ -9,7 +9,7 @@ Laralist is a classified web application written in Laravale Framework.
 * Mail Templtaes
 * Backend User Managment
 * Admin Controled Settings
-* Ad Serch
+* Search Ads
 
 ## Installation
 Run the folowing commands from the Terminal:
