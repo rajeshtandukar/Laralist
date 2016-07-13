@@ -3,15 +3,15 @@
 Laralist is a classified web application written in Laravale Framework.
 
 ## Features
-* Fontend/Backed Ad(Item) Post
-* Backend Ad Mangement
-* N Level Category
+* Front-end/Back-end Ad(Item) Post
+* Back-end Ad Mangement
+* n-Level Cateories
 * Mail Templtaes
 * Backend User Managment
-* Admin Controled Settings Managment
+* Admin Controled Settings
 
 ## Installation
-Run the command from the Terminal:
+Run the folowing commands from the Terminal:
 ```
 composer install
 composert dump-autoload
@@ -28,10 +28,10 @@ Next, add the prviders below to the providers array of config/app.php
  	Laralist\Listmeta\LaralistMetaServiceProvider::class, 
  	Laralist\Listconfig\ListConfigServiceProvider::class,
  	Laralist\Listcurl\ListCurlServiceProvider::class,
- 	
+
  ],  
 ```
-Finally, add following class aliases to the aliases array of config/app.php:
+Finally, add following class aliases to the aliases array of config/app.php
 ```
 'aliases' => [
     // ...
