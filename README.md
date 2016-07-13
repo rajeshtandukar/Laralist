@@ -49,7 +49,6 @@ Set your database configuration in .env file
 
 Finally, run the following commands from the Terminal
 ```
-php artisan make:auth
 php artisan db:seed
 ```
 
