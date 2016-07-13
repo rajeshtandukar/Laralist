@@ -81,4 +81,4 @@ Finally, add following class aliases to the aliases array of config/app.php
   (https://github.com/rajeshtandukar/Laralist/blob/master/images/post.png)
 
   ![Image of Ad Seach]
-  (https://github.com/rajeshtandukar/Laralist/blob/master/images/seach.png)
+  (https://github.com/rajeshtandukar/Laralist/blob/master/images/search.png)
