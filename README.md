@@ -6,7 +6,7 @@ Laralist is a classified web application written in Laravale Framework.
 * Front-end/Back-end Ad(Item) Post
 * Back-end Ad Management
 * n-Level Categories
-* Mail Templataes
+* Mail Templates
 * Back-end User Management
 * Admin Controlled Settings
 * Search Ads
@@ -18,7 +18,7 @@ composer install
 composer dump-autoload
 ```
 
-Next, add the prviders below to the providers array of config/app.php
+Next, add the providers below to the providers array of config/app.php
 ```
 'providers' => [
 // .....
