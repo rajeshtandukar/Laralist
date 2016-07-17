@@ -82,6 +82,28 @@
                       </div>
                     </div>
 
+                     <div class="form-group">              
+                      {!! Form::label('aws_s3_service', 'Enable AWS S3 Service', array('class'=> 'col-sm-2 control-label')) !!}
+                      <div class="col-sm-10">
+                        {!!Form::checkbox('aws_s3_service', '1', config('laralist.aws_s3_service', ['class'=>'form-control', 'id'=>'aws_s3_service1']))!!}
+                                        
+                      </div>
+                    </div> 
+
+                     <div class="form-group">              
+                      {!! Form::label('aws_s3_bucket', 'AWS S3 Bucket', array('class'=> 'col-sm-2 control-label')) !!}
+                      <div class="col-sm-10">
+                       {!! Form::text('aws_s3_bucket', config('laralist.aws_s3_bucket'), ['class'=>'form-control', 'placeholder'=>'Enter S3 Bucket', 'id'=>'aws_s3_bucket']) !!}
+                      </div>
+                    </div> 
+
+                     <div class="form-group">              
+                      {!! Form::label('aws_s3_folder', 'AWS S3 Upload Folder', array('class'=> 'col-sm-2 control-label')) !!}
+                      <div class="col-sm-10">
+                       {!! Form::text('aws_s3_folder', config('laralist.aws_s3_folder'), ['class'=>'form-control', 'placeholder'=>'Enter Alias', 'id'=>'aws_s3_folder']) !!}
+                      </div>
+                    </div> 
+
 
                   <!-- /.box-body -->
                   <div class="box-footer">                    

@@ -36,6 +36,9 @@ class SettingsController extends Controller
         Config::write('laralist.default_country', $request['default_country']);
         Config::write('laralist.max_image_post', $request['max_image_post']);
         Config::write('laralist.google_map_api_key', $request['google_map_api_key']);
+        Config::write('laralist.aws_s3_service', isset($request['aws_s3_service'])? $request['aws_s3_service']:0 );
+        Config::write('laralist.aws_s3_bucket', $request['aws_s3_bucket']);
+        Config::write('laralist.aws_s3_folder', $request['aws_s3_folder']);
         $response = array('msg' =>'success');
         return response()->json($response); 
     }   
