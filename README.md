@@ -10,7 +10,7 @@ Laralist is a classified web application written in Laravale Framework.
 * Back-end User Management
 * Admin Controlled Settings
 * Search Ads
-* Upolad images to AWS S3
+* Upload images to AWS S3
 
 ## Installation
 Run the folowing commands from the Terminal:
