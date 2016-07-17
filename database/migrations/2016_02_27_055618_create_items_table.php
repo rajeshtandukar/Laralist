@@ -36,6 +36,7 @@ class CreateItemsTable extends Migration
             $table->double('lat')->nullable();
             $table->double('lng')->nullable();
             $table->string('image')->nullable();
+            $table->string('s3key')->nullable(); 
             $table->timestamps();
 
             $table->foreign('category_id')

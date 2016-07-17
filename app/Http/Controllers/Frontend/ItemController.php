@@ -5,15 +5,14 @@ namespace App\Http\Controllers\Frontend;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\Http\Requests\ItemRequest;
-
 use App\Http\Controllers\Controller;
 use App\Item;
 use App\Category;
 use App\Country;
 use App\Item_Images;
-
 use DB;
 use Meta;
+use AWS;
 
 class ItemController extends Controller
 {    

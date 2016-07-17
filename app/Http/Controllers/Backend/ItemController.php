@@ -17,6 +17,7 @@ use DB;
 use File;
 use PDO;
 use Log;
+use AWS;
 
 /**
  * Class DashboardController
@@ -53,12 +54,22 @@ class ItemController extends Controller
 
         $image = $request->file('image');
         $filename=null;
+        $s3key = null;
 
         if( $image && $image->isValid()){
             $extension = $image->getClientOriginalExtension();
             $uploadPath = public_path(). '/uploads';
             $filename = rand(111,999). '.'. $extension;
-            $image->move($uploadPath, $filename);   
+            $image->move($uploadPath, $filename); 
+            if( '1' ==  config('laralist.aws_s3_service')){
+                $s3key=  config('laralist.aws_s3_folder').'/'.$filename;    
+                $s3 = AWS::get('s3');
+                $s3->putObject(array(
+                    'Bucket'     => config('laralist.aws_s3_bucket'),
+                    'Key'        => $s3key,           
+                    'SourceFile' =>  $uploadPath.'/'. $filename,
+                ));
+            }    
         }
 
         $item = new Item;
@@ -78,6 +89,7 @@ class ItemController extends Controller
         $item->published = $request['published'];
         $item->user_id = $request['user_id'];
         $item->image = $filename;
+        $item->s3key = $s3key;
 
         if($item->save()){
             if(!is_null($filename)) {
@@ -85,6 +97,7 @@ class ItemController extends Controller
                 $item_image->image = $filename;
                 $item_image->item_id = $item->id;
                 $item_image->published = 1;
+                $item_image->s3key = $s3key;
                 $item_image->save();
             }
 

@@ -16,5 +16,14 @@ return [
 	// Google Api key, for auto serach and googel map
 	'google_map_api_key' =>'',
 
+	// AWS S3 Service 
+	'aws_s3_service' => 0,
+
+	// AWS S3 Service Bucket
+	'aws_s3_bucket' => 'laralist',
+
+	// AWS S3 Service Bucket
+	'aws_s3_folder' => 'uploads',
+
 	];
 

@@ -50,7 +50,15 @@
                     @if(empty($item->image))
                         <img alt="{!!$item->title!!}" src="http://placehold.it/750x500?text=I{!!$item->title!!}"class="img-responsive">
                     @else
+                        @if(!empty($item->s3key))
+                         <?php 
+                          $s3 = AWS::get('s3');
+                          $url=$s3->getObjectUrl(config('laralist.aws_s3_bucket'),date("h:i:s", time() + 30), array('Scheme'));
+                        ?>
+                        @else
+                        <img class="img-responsive" src="{!!$url!!}" alt="">
                         <img class="img-responsive" src="{!!asset('uploads/'.$item->image) !!}" alt="">
+                        @endif
                      @endif
                 @endif
 

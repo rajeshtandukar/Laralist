@@ -30,6 +30,7 @@ Next, add the providers below to the providers array of config/app.php
  	Laralist\Listmeta\LaralistMetaServiceProvider::class, 
  	Laralist\Listconfig\ListConfigServiceProvider::class,
  	Laralist\Listcurl\ListCurlServiceProvider::class,
+  Aws\Laravel\AwsServiceProvider::class,
 
  ],  
 ```
@@ -41,7 +42,8 @@ Then, add following class aliases to the aliases array of config/app.php
       'Html' => Collective\Html\HtmlFacade::class,
       'Gravatar'  => Creativeorange\Gravatar\Facades\Gravatar::class,
       'JsValidator' => Proengsoft\JsValidation\Facades\JsValidatorFacade::class,
-      'Meta'      => Laralist\Listmeta\Facade::class, 
+      'Meta'      => Laralist\Listmeta\Facade::class,
+      'AWS' => Aws\Laravel\AwsFacade::class,  
     // ...
   ],
 ```
@@ -50,6 +52,7 @@ Set your database configuration in .env file
 Finally, run the following commands from the Terminal
 ```
 php artisan db:seed
+php artisan vendor:publish
 ```
 
 # Back-end ScreenSort

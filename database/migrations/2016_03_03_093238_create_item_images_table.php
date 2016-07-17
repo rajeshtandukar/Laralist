@@ -15,7 +15,8 @@ class CreateItemImagesTable extends Migration
        Schema::create('item_images', function (Blueprint $table) {
 
             $table->increments('id');
-            $table->string('image');            
+            $table->string('image');
+            $table->string('s3key')->nullable();             
             $table->integer('item_id');
             $table->tinyinteger('published');
             $table->timestamps();

@@ -16,7 +16,10 @@ $(document).ready(function(){
 			item_per_page: $('#item_per_page').val(),
 			default_country: $('#default_country').val(),
 			max_image_post: $('#max_image_post').val(),
-			google_map_api_key: $('#google_map_api_key').val()
+			google_map_api_key: $('#google_map_api_key').val(),
+			aws_s3_service: $('#aws_s3_service:checked').val(),
+			aws_s3_bucket: $('#aws_s3_bucket').val(),
+			aws_s3_folder: $('#aws_s3_folder').val()	
 			
 		}
 
